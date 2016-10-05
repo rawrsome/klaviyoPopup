@@ -5,7 +5,7 @@
     var showPopupOnThisPage = true;
   {% endif %}
     $(window).load(function() {
-      if ({{ settings.show_popup_on_mobile_device }} || !T3Core.IsMobileDevice()) {
+      if (true || !T3Core.IsMobileDevice()) {
         var options = {
           {% assign first_visit = settings.modal_signup_first %}
           {% assign total_visits = settings.modal_signup_total %}

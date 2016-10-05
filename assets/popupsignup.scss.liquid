@@ -1,8 +1,7 @@
-$modal_bg_color: {{ settings.modal_bg_color }};
-$modal_bg_transparency: {{ settings.modal_bg_transparency }};
-$signup_text_align: {{ settings.signup_text_align }};
-$signup_bg_color: {{ settings.signup_bg_color }};
-$signup_border_color: {{ settings.signup_border_color }};
+// $modal_bg_color: {{ settings.modal_bg_color }};
+// $modal_bg_transparency: {{ settings.modal_bg_transparency }};
+// $signup_bg_color: {{ settings.signup_bg_color }};
+// $signup_border_color: {{ settings.signup_border_color }};
 .modalHolder {
   display: none;
   // or not - can be an inline form that gets popped...
@@ -20,8 +19,8 @@ $signup_border_color: {{ settings.signup_border_color }};
     width: 100%;
     height: 100%;
     z-index: 10000;
-    background-color: rgba($modal_bg_color, $modal_bg_transparency);
-    text-align: $signup_text_align;
+    // background-color: rgba($modal_bg_color, $modal_bg_transparency);
+    text-align: left;
   }
   .xcenter {
     display: table-cell;
@@ -33,9 +32,9 @@ $signup_border_color: {{ settings.signup_border_color }};
     display: inline-block;
     *display: inline;
     zoom: 1;
-    background-color: $modal_bg_color;
-    background: $signup_bg_color;
-    border: 1px solid $signup_border_color;
+    background-color: #fff;
+    background: #fff;
+    border: 1px solid #333;
     padding: 1em;
     box-shadow: 0 0 2px rgba(0,0,0,0.15);
   }
